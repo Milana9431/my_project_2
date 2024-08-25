@@ -1,0 +1,163 @@
+.container-form {
+    background-color: #EEEFF1;
+}
+
+.contant-form {
+    padding: 100px 0 100px 0;
+    display: grid;
+    justify-items: center;
+}
+
+.block-1 {
+    max-width: 540px;
+    text-align: center;
+    padding-bottom: 65px;
+}
+
+.form-title{
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.form-desc{
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    gap: 30px;
+}
+
+.input-group input {
+    width: 255px;
+    height: 50px;
+}
+
+.input {
+    padding-left: 20px;
+}
+
+.textarea {
+    width: 100%;
+    height: 175px;
+}
+
+.form-button{
+    margin: 30px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.form-btn {
+    background-color: #34547A;
+    color: #fff;
+    border: none;
+    width: 190px;
+    height: 55px;
+}
+
+.form-btn:hover,
+.form-btn:focus-visible{
+    outline: 2px solid #34547A;
+    cursor:pointer;
+}
+
+@media(max-width:580px){
+    .input-group {
+        gap: 3vw;
+    }
+
+    .input-group input {
+        width: 240px;
+        height: 50px;
+    }
+    
+    .form-button{
+        margin: 20px 0 0 0;
+    }
+    
+}
+
+@media(max-width:520px){
+
+    .block-1 {
+        max-width: 520px;
+        padding-bottom: 50px;
+    }
+
+    .form-title{
+        font-size: 29px;
+        margin-bottom: 35px;
+    }
+
+    .form-desc{
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .input-group {
+        gap: 2vw;
+    }
+
+    .input-group input {
+        width: 200px;
+        height: 35px;
+    }
+    
+    .form-button{
+        margin: 15px 0 0 0;
+    }
+    
+    .form-btn {
+        width: 150px;
+        height: 50px;
+    }
+}
+
+@media(max-width:435px){
+    .block-1 {
+        max-width: 500px;
+        padding-bottom: 40px;
+    }
+
+    .form-title{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .form-desc{
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .input-group {
+        gap: 2vw;
+    }
+
+    .input-group input {
+        width: 160px;
+        height: 30px;
+    }
+    
+    .textarea{
+        width: 100%;
+        height: 160px;
+    }
+
+    .form-button{
+        margin: 10px 0 0 0;
+    }
+    
+    .form-btn {
+        width: 130px;
+        height: 45px;
+    }
+}

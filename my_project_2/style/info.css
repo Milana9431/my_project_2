@@ -1,0 +1,45 @@
+.info{
+    padding: 119px 0 100px 0;
+}
+
+.info__wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.info__wrapper-content{
+    max-width: 540px;
+    text-align: center;
+}
+
+.info__title{
+ font-size: 32px;
+}
+
+.info__desc{
+    color: #727272;
+    line-height: 26px;
+    margin: 45px 0 0 0;
+}
+
+@media (max-width:550px){
+    .info{
+        padding: 110px 0 100px 0;
+    }
+
+    .info__wrapper-content{
+        max-width: 500px;
+        text-align: center;
+    }
+    
+    .info__title{
+     font-size: 30px;
+    }
+    
+    .info__desc{
+        color: #727272;
+        line-height: 26px;
+        margin: 45px 0 0 0;
+    }
+}
+

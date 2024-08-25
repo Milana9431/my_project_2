@@ -1,0 +1,130 @@
+.gallery {
+    padding: 28px 0 0 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+}
+
+.grid-item {
+    background-size: cover;
+    background-position: center;
+    height: 480px;
+}
+
+.grid-item:nth-child(1) {
+    background-image: url('../assets/webp/Rectangle_3.webp');
+}
+
+.grid-item:nth-child(2) {
+    background-image: url('../assets/webp/Rectangle_4.webp');
+}
+
+.grid-item:nth-child(3) {
+    background-image: url('../assets/webp/Rectangle_3.webp');
+}
+
+.grid-item:nth-child(4) {
+    background-image: url('../assets/webp/Rectangle_4.webp');
+}
+
+.grid-item:nth-child(5) {
+    background-image: url('../assets/webp/Rectangle_4.webp');
+}
+
+.grid-item:nth-child(6) {
+    background-image: url('../assets/webp/Rectangle_3.webp');
+}
+
+.grid-item:nth-child(7) {
+    background-image: url('../assets/webp/Rectangle_4.webp');
+}
+
+.grid-item:nth-child(8) {
+    background-image: url('../assets/webp/Rectangle_3.webp');
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-item:nth-child(7) {
+        background-image: url('../assets/webp/Rectangle_4.webp');
+        display: none;
+    }
+
+    .grid-item:nth-child(8) {
+        background-image: url('../assets/webp/Rectangle_3.webp');
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-item:nth-child(5) {
+        background-image: url('../assets/webp/Rectangle_4.webp');
+        display: none;
+    }
+
+    .grid-item:nth-child(6) {
+        background-image: url('../assets/webp/Rectangle_3.webp');
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.gallery__microsoft-img {
+    padding: 72px 0 72px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.microsoft-img {
+    width: 255px;
+    height: auto;
+}
+
+@media (max-width: 1120px) {
+    .gallery__microsoft-img {
+        gap: 20px;
+    }
+
+    .microsoft-img {
+        width: 200px;
+        height: auto;
+    }
+}
+
+@media (max-width: 860px) {
+    .gallery__microsoft-img {
+        padding: 60px 0 60px 0;
+        gap: 10px;
+    }
+
+    .microsoft-img {
+        width: 150px;
+        height: auto;
+    }
+}
+
+@media (max-width: 630px) {
+    .gallery__microsoft-img {
+        padding: 60px 0 60px 0;
+        flex-wrap: wrap;
+    }
+}
